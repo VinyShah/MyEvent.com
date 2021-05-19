@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+  			box-sizing: border-box;
+		}
+
+		body {
+ 	 		background-color: lavender;
+  			padding: 20px;
+  			font-family: Arial;
+		}
+
+		.main {
+  			max-width: 1000px;
+  			margin: auto;
+		}
+
+		h1 {
+  			font-size: 50px;
+  			word-break: break-all;
+		}
+
+		h3,p {
+			color: white;
+		}
+
+		.row {
+ 		 	margin: 8px -16px;
+		}
+
+		.row,
+		.row > .column {
+  			padding: 8px;
+		}
+
+		.column {
+  			float: left;
+  			width: 25%;
+		}
+
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+		.content {
+  			background-color: black;
+  			padding: 10px;
+		}
+
+		@media screen and (max-width: 900px) {
+  			.column {
+   	 			width: 50%;
+  			}
+		}
+
+		@media screen and (max-width: 600px) {
+  			.column {
+    				width: 100%;
+  			}
+		}
+		.button {
+  			padding: 15px 60px;
+  			font-size: 20px;
+			font-weight: 600;
+  			text-align: center;
+  			cursor: pointer;
+  			outline: none;
+  			color: black;
+  			background-color: lightgreen;
+  			border: none;
+  			border-radius: 10px;
+  			box-shadow: 0 5px #D2386C;
+			
+		}
+
+		.button:hover {background-color: snow}
+
+		.button:active {
+  			background-color: pink;
+  			box-shadow: 0 2px black;
+  			transform: translateY(1px);
+		}
+		.flex-parent {
+			display: flex;
+		}
+		.jc-center {
+			justify-content: center;
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- MAIN (Center website) -->
+	<div class="main">
+
+	<h1>BABY SHOWER DECORATIONS</h1>
+	<hr>
+
+	<h2>Images</h2>
+	<h4>Some achivements of our Company. Here is Some Baby Shower Ceremonies Decorations.</h4>
+	<h4>Baby shower ceremonies decorations are..</h4>
+	
+	<!-- Portfolio Gallery Grid -->
+		<div class="row">
+  			<div class="column">
+    				<div class="content">
+      				<img src="cake2.png" alt="Table Decor" style="width:100%">
+      				<h3>Table Decoration</h3>
+      				<p>This decoration is done with Cakes, different types of Chocolates and pastries too.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="walldecor.png" alt="Wall Decor" style="width:100%">
+      				<h3>Wall Decoration</h3>
+      				<p>Wall hangings with an authentic decorations styles,the innovative ideas placed in one frame with some babies clothes.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="wall1.png" alt="Theme Party" style="width:100%">
+      				<h3>Theme Based Decoration</h3>
+      				<p>In this all is about a theme used in party with all coordinations indeed with beautiful elegant colors.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="pooja.png" alt="Customised Party" style="width:100%">
+      				<h3>Baby Shower Pooja</h3>
+      				<p>This pooja is performed for wellbeing of mother and new baby.And we arrange all the importaant thing for this tradition in a unique way.</p>
+    				</div>
+  			</div>
+		<!-- END GRID -->
+		</div>
+
+		<div class="content">
+  			<img src="pink.png" alt="Outside Party" style="width:100%">
+  			<h3>Some Other Work</h3>
+  			<p>We have organised alot and have experienced of having a huge baby shower with amazing themes.</p>
+  			<p>Our company help people to do brainstorming of their ideas and to make them come true in their budgets with satisfactory.</p>
+		</div>		
+	<!-- END MAIN -->
+	<div> 
+		<br>
+	</div>
+	<div class= "flex-parent jc-center">
+		<button class="button">Book</button>	
+	</div>
+	</div>
+
+</body>
+</html>

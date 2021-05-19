@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Galary</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: lavender;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Events,Events,Events</h1>
+  <p>Glimpse of our recent work</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="bday2.jpg" style="width:100%">
+    <img src="BS1.jpeg" style="width:100%">
+    <img src="M1.jpg" style="width:100%">
+    <img src="BS2.jpg" style="width:100%">
+    <img src="bday3.jpg" style="width:100%">
+    <img src="M2.jpg" style="width:100%">
+    <img src="HW1.jpg" style="width:100%">
+    <img src="P1.jpg" style="width:100%">
+    <img src="HW8.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bday4.jpg" style="width:100%">
+    <img src="BS3.jpg" style="width:100%">
+    <img src="M3.jfif" style="width:100%">
+    <img src="bday5.jpg" style="width:100%">
+    <img src="BS4.jpg" style="width:100%">
+    <img src="M4.jpg" style="width:100%">
+    <img src="P2.jpg" style="width:100%">
+    <img src="HW9.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="BS5.jpg" style="width:100%">
+    <img src="M5.jpg" style="width:100%">
+    <img src="bday6.jpg" style="width:100%">
+    <img src="HW2.jpg" style="width:100%">
+    <img src="BS7.jpg" style="width:100%">
+    <img src="M6.jpg" style="width:100%">
+    <img src="bday7.jpg" style="width:100%">
+    <img src="bday9.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="HW3.jpg" style="width:100%">
+    <img src="HW4.jfif" style="width:100%">
+    <img src="bday8.jpg" style="width:100%">
+    <img src="HW5.jpeg" style="width:100%">
+    <img src="HW6.jpeg" style="width:100%">
+    <img src="HW7.jpg" style="width:100%">
+    <img src="bday10.jfif" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

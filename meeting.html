@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+  			box-sizing: border-box;
+		}
+
+		body {
+ 	 		background-color: lavender;
+  			padding: 20px;
+  			font-family: Arial;
+		}
+
+		.main {
+  			max-width: 1000px;
+  			margin: auto;
+		}
+
+		h1 {
+  			font-size: 50px;
+  			word-break: break-all;
+		}
+
+		h3,p {
+			color: white;
+		}
+
+		.row {
+ 		 	margin: 8px -16px;
+		}
+
+		.row,
+		.row > .column {
+  			padding: 8px;
+		}
+
+		.column {
+  			float: left;
+  			width: 25%;
+		}
+
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+		.content {
+  			background-color: black;
+  			padding: 10px;
+		}
+
+		@media screen and (max-width: 900px) {
+  			.column {
+   	 			width: 50%;
+  			}
+		}
+
+		@media screen and (max-width: 600px) {
+  			.column {
+    				width: 100%;
+  			}
+		}
+		.button {
+  			padding: 15px 60px;
+  			font-size: 20px;
+			font-weight: 600;
+  			text-align: center;
+  			cursor: pointer;
+  			outline: none;
+  			color: black;
+  			background-color: lightgreen;
+  			border: none;
+  			border-radius: 10px;
+  			box-shadow: 0 5px #D2386C;
+			
+		}
+
+		.button:hover {background-color: snow}
+
+		.button:active {
+  			background-color: pink;
+  			box-shadow: 0 2px black;
+  			transform: translateY(1px);
+		}
+		.flex-parent {
+			display: flex;
+		}
+		.jc-center {
+			justify-content: center;
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- MAIN (Center website) -->
+	<div class="main">
+
+	<h1>MEETING DECORATIONS</h1>
+	<hr>
+
+	<h2>Images</h2>
+	<h4>The decorations are..</h4>
+	
+	<!-- Portfolio Gallery Grid -->
+		<div class="row">
+  			<div class="column">
+    				<div class="content">
+      				<img src="meeting2.jpg" alt="Office Decor" style="width:100%">
+      				<h3>Office Decoration</h3>
+      				<p>We organise the meeting for the office with the typical enivornment of office with basic ideas with new ideaology.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="meeting3.jpg" alt="Hall Decor" style="width:100%">
+      				<h3>Hall Decoration</h3>
+      				<p>The meetings held in hall with more people in an ethical way is also been experienced by us. the decorations is done is in a eye-catchy ways to relax the atmostphere and keep people calm.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="meeting5.jpg" alt="Theme Meeting" style="width:100%">
+      				<h3>Theme Based Decoration</h3>
+      				<p>In this if the client wants to add some color code or some theme based meeting for some purpose of success of achivements.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="meeting1.jpg" alt="Customised Meeting" style="width:100%">
+      				<h3>Customised Decoration</h3>
+      				<p>The customised once is use for meeting for which the client thinks out of box and all the rearrangements are in a georgeous way.</p>
+    				</div>
+  			</div>
+		<!-- END GRID -->
+		</div>
+
+		<div class="content">
+  			<img src="meeting4.jpg" alt="Outside Meeting" style="width:100%">
+  			<h3>Some Other Work</h3>
+  			<p>We have classic ideas wih modern touch and the clients satisfaction top on prior.</p>
+  			<p>The elegant and stylist way to make your meeting fun and happening.</p>
+		</div>		
+	<!-- END MAIN -->
+	<div> 
+		<br>
+	</div>
+	<div class= "flex-parent jc-center">
+		<button class="button">Book</button>	
+	</div>
+	</div>
+
+</body>
+</html>

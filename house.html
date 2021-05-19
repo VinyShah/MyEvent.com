@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+  			box-sizing: border-box;
+		}
+
+		body {
+ 	 		background-color: lavender;
+  			padding: 20px;
+  			font-family: Arial;
+		}
+
+		.main {
+  			max-width: 1000px;
+  			margin: auto;
+		}
+
+		h1 {
+  			font-size: 50px;
+  			word-break: break-all;
+		}
+
+		h3,p {
+			color: white;
+		}
+
+		.row {
+ 		 	margin: 8px -16px;
+		}
+
+		.row,
+		.row > .column {
+  			padding: 8px;
+		}
+
+		.column {
+  			float: left;
+  			width: 25%;
+		}
+
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+		.content {
+  			background-color: black;
+  			padding: 10px;
+		}
+
+		@media screen and (max-width: 900px) {
+  			.column {
+   	 			width: 50%;
+  			}
+		}
+
+		@media screen and (max-width: 600px) {
+  			.column {
+    				width: 100%;
+  			}
+		}
+		.button {
+  			padding: 15px 60px;
+  			font-size: 20px;
+			font-weight: 600;
+  			text-align: center;
+  			cursor: pointer;
+  			outline: none;
+  			color: black;
+  			background-color: lightgreen;
+  			border: none;
+  			border-radius: 10px;
+  			box-shadow: 0 5px #D2386C;
+			
+		}
+
+		.button:hover {background-color: snow}
+
+		.button:active {
+  			background-color: pink;
+  			box-shadow: 0 2px black;
+  			transform: translateY(1px);
+		}
+		.flex-parent {
+			display: flex;
+		}
+		.jc-center {
+			justify-content: center;
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- MAIN (Center website) -->
+	<div class="main">
+
+	<h1>Home DECORATIONS</h1>
+	<hr>
+
+	<h2>Images</h2>
+	<h4>The House Warming party decorations are..</h4>
+	
+	<!-- Portfolio Gallery Grid -->
+		<div class="row">
+  			<div class="column">
+    				<div class="content">
+      				<img src="w1.jpg" alt="Food Decor" style="width:100%">
+      				<h3>Food Decoration</h3>
+      				<p>The plates, glasses , and different crockery were falbulous place in such a way that veiwing with different angels with different fab looks with all colors.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="w2.jpg" alt="Lights Decor" style="width:100%">
+      				<h3>Light Decoration</h3>
+      				<p>Innovation in light effects gives a new scene to the home with a modern looks and bold effects too.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="w3.jpg" alt="Theme Party" style="width:100%">
+      				<h3>Theme Based Decoration</h3>
+      				<p>Theme parties are done with the themes giving by the customers and which gives a graceful and dazzing look.</p>
+    				</div>
+  			</div>
+  			<div class="column">
+    				<div class="content">
+    				<img src="w4.jpg" alt="Customised Party" style="width:100%">
+      				<h3>Customised Decoration</h3>
+      				<p>In this all the funny, crazy combinations of the customers are done with some professional touch. This gives them a chance to enhance their thinking and to do want they want.</p>
+    				</div>
+  			</div>
+		<!-- END GRID -->
+		</div>
+
+		<div class="content">
+  			<img src="w5.jpg" alt="Wall Decor" style="width:100%">
+  			<h3>Some Other Work</h3>
+  			<p>There are many magnificent works we have done in past and are always looking forward for the new ones.</p>
+  			<p>While planning we keep in mind the budgets, ideas and expactations of the customers. We are always delightful to help people to find their events to come in realistic way.</p>
+		</div>	
+	<!-- END MAIN -->
+	<div> 
+		<br>
+	</div>
+	<div class= "flex-parent jc-center">
+		<button class="button">Book</button>	
+	</div>
+	</div>
+
+</body>
+</html>
